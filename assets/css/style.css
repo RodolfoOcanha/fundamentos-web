@@ -24,11 +24,13 @@ color: rgba(5, 128, 128, 0.897) ;
 
 #menu li a:hover{
     color: rgb(10, 10, 10);
+    size: 20px;
 }
 
 .text {
     text-align: center;
     size: 20px;
+    font-weight: bold;
 }
 .br-50{
 border-radius: 60%;

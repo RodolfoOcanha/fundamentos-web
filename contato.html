@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <body style="background-color: rgb(178, 179, 176, 0.8)"></body>
     <ul id="menu">
         <li>
             <a href="index.html"> Apresentação </a>
@@ -15,13 +16,23 @@
             <a href="contato.html"> Contato </a>
         </li>    
     </ul>
-    <h1 class="center">Entre em contato e envia sua proposta</h1>
+    <h1 class="center">Entre em contato e envie sua proposta</h1>
 
     <form action="nome">Nome:</form>
-    <input type="text" id = nome>
+    <input type="text" id = 'nome' onkeyup="validaNome()">
+    <div id="txtNome"></div>
+    <br>
     <form action="email">Email:</form>
-    <input type="email" id = email>
+    <input type="email" id = 'email' onkeyup="validaEmail()">
+    <div id="txtEmail"></div>
+    <br>
     <form action="proposta">Proposta:</form>
-    <textarea name="proposta" id="proposta" cols="60" rows="5"></textarea>
+    <textarea name="proposta" id="proposta" cols="60" rows="5" onkeyup="validaProposta()"></textarea>
+    <div id="txtProposta"></div>
+    <br>
+    <button onclick="enviar()">Enviar</button>
+    </form>    
+<script src="assets/js/script.js"></script>
+
 </body>
 </html>
